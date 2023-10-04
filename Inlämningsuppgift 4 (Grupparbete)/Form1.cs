@@ -7,6 +7,8 @@ namespace Inlämningsuppgift_4__Grupparbete_
             InitializeComponent();
             string vanessa =  "prutt";
             //Vanessa
+            //här skriber vanesa
         }
+
     }
 }
