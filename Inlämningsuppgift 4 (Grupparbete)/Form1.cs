@@ -22,7 +22,7 @@ namespace Inlämningsuppgift_4__Grupparbete_
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            //bILTEMA 
         }
     }
     
