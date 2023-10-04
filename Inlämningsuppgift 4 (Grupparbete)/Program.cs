@@ -8,7 +8,7 @@ namespace Inlämningsuppgift_4__Grupparbete_
         [STAThread]
         static void Main()
         {
-            //Cornelia
+            
 
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.

@@ -10,9 +10,12 @@ namespace Inlämningsuppgift_4__Grupparbete_
         private void Form1_Load(object sender, EventArgs e)
         {
             textBox1.Text = "simon123";
-            // addes this information
-
-            // här skriver najah text 
+            //lul
+            // Simon
+            // Najah 
+            // Cornelia
+            // Vanessa
+            // Kevin
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -20,6 +23,6 @@ namespace Inlämningsuppgift_4__Grupparbete_
 
         }
     }
-    //stockhol,
-    //
+    
+   
 }
