@@ -20,6 +20,6 @@ namespace Inlämningsuppgift_4__Grupparbete_
 
         }
     }
-    //bruh
-    //hej
+    //stockhol,
+    //
 }
