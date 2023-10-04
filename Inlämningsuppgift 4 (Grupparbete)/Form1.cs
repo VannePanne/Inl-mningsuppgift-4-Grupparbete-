@@ -7,6 +7,6 @@ namespace Inlämningsuppgift_4__Grupparbete_
             InitializeComponent();
         }
     }
-
+    //bruh
     //hej
 }
