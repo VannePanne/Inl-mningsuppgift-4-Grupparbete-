@@ -22,6 +22,7 @@ namespace Inlämningsuppgift_4__Grupparbete_
 
             // bestway 
             //123
+            //Cornelia 2.0
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)s
