@@ -12,6 +12,7 @@ namespace Inlämningsuppgift_4__Grupparbete_
             textBox1.Text = "simon123";
             // addes this information
 
+            // här skriver najah text 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
