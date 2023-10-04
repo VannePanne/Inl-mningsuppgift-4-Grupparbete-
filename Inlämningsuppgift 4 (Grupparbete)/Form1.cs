@@ -5,6 +5,7 @@ namespace Inlämningsuppgift_4__Grupparbete_
         public Form1()
         {
             InitializeComponent();
+            string vanessa =  "prutt";
         }
     }
 }
