@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inlämningsuppgift 4 (Grupparbete)", "Inlämningsuppgift 4 (Grupparbete)\Inlämningsuppgift 4 (Grupparbete).csproj", "{09E3B34D-B2F7-475F-8FA0-5887602A56BA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tillfälliga projekt", "Tillfälliga projekt", "{20D86F35-BC67-4E1A-AC5B-A88A8CECE2DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inlämningsuppgift 4 (Grupparbete) ver 1 3rd", "Inlämningsuppgift 4 (Grupparbete) ver 1 3rd\Inlämningsuppgift 4 (Grupparbete) ver 1 3rd.csproj", "{2F41A8C5-66A4-49F9-962E-031B06F44D4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inlämningsuppgift 4 (Grupparbete) ver 1 1st", "Inlämningsuppgift 4 (Grupparbete) ver 1 1st\Inlämningsuppgift 4 (Grupparbete) ver 1 1st.csproj", "{912C3A2B-AD5B-4873-B652-34880AB37DA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inlämningsuppgift 4 (Grupparbete) ver 1 2nd", "Inlämningsuppgift 4 (Grupparbete) ver 1 2nd\Inlämningsuppgift 4 (Grupparbete) ver 1 2nd.csproj", "{6393E125-5A7F-4474-86F7-33AC08552CC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B6CFCBBC-F247-4097-97F1-54651A889E9C}"
+	ProjectSection(SolutionItems) = preProject
+		recipes.txt = recipes.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +22,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{09E3B34D-B2F7-475F-8FA0-5887602A56BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{09E3B34D-B2F7-475F-8FA0-5887602A56BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{09E3B34D-B2F7-475F-8FA0-5887602A56BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{09E3B34D-B2F7-475F-8FA0-5887602A56BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F41A8C5-66A4-49F9-962E-031B06F44D4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F41A8C5-66A4-49F9-962E-031B06F44D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F41A8C5-66A4-49F9-962E-031B06F44D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F41A8C5-66A4-49F9-962E-031B06F44D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{912C3A2B-AD5B-4873-B652-34880AB37DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{912C3A2B-AD5B-4873-B652-34880AB37DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{912C3A2B-AD5B-4873-B652-34880AB37DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{912C3A2B-AD5B-4873-B652-34880AB37DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6393E125-5A7F-4474-86F7-33AC08552CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6393E125-5A7F-4474-86F7-33AC08552CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6393E125-5A7F-4474-86F7-33AC08552CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6393E125-5A7F-4474-86F7-33AC08552CC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{912C3A2B-AD5B-4873-B652-34880AB37DA0} = {20D86F35-BC67-4E1A-AC5B-A88A8CECE2DD}
+		{6393E125-5A7F-4474-86F7-33AC08552CC8} = {20D86F35-BC67-4E1A-AC5B-A88A8CECE2DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6155B67E-C388-4904-B9BE-F8E550A43CF8}

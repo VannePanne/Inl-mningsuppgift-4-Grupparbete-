@@ -11,6 +11,7 @@ namespace Inlämningsuppgift_4__Grupparbete_
         {
 
         }
+        Food newFood = new Food("","", "", "");
 
 
     }

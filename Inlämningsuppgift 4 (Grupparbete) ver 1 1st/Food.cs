@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Inlämningsuppgift_4__Grupparbete_
 {
@@ -14,20 +15,25 @@ namespace Inlämningsuppgift_4__Grupparbete_
         public List<Food> foodList;
         public string Name;
         public string Description;
+        TextBox txtName;
+        TextBox txtDescription;
 
-        public Food(string Name, string Description)
+
+        public Food(string Name, string Description, TextBox txtName, TextBox txtDescription)
         {
             this.Name = Name;
             this.Description = Description;
+            this.txtName = txtName;
+            this.txtDescription = txtDescription;
         }
 
 
         // Methods
-        public void AddFood()
+        public virtual void AddFood()
         {
             using (StreamWriter writer = new StreamWriter(FilePath, true))
             {
-                writer.WriteLine($"{txtName.Text},{txtDescription.Text}");
+                writer.WriteLine($"{txtName.Text},{txtDescription.Text},Food");
             }
             
             // Create a new Food object and add it to the list
@@ -44,7 +50,17 @@ namespace Inlämningsuppgift_4__Grupparbete_
     }
     public class Fish : Food
     {
+        public override void AddFood()
+        {
+            using (StreamWriter writer = new StreamWriter(FilePath, true))
+            {
+                writer.WriteLine($"{txtName.Text},{txtDescription.Text},Fish");
+            }
 
+            // Create a new Food object and add it to the list
+            Food newFood = new Food(txtName.Text, txtDescription.Text);
+            foodList.Add(newFood);
+        }
     }
     public class Salad : Food
     {
@@ -54,7 +70,7 @@ namespace Inlämningsuppgift_4__Grupparbete_
     {
 
     }
-    public class Desert : Food
+    public class Dessert : Food
     {
 
     }
