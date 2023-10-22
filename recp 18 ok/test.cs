@@ -9,7 +9,7 @@ namespace recp_18_ok
 {
     public class test
     {
-        public static string File { get; } = @"C:\Users\najah\OneDrive\Skrivbord\objekt oriented in\adressbokNv.txt"; // skapa sökväg här
+        public static string Filepath { get; set; } = @"recipe.txt"; // skapa sökväg här
         public string Titel { get; set; }
         public string Katagory { get; set; }
         public string Portion { get; set; }
@@ -18,15 +18,20 @@ namespace recp_18_ok
 
         public void Add(string Titel,string Katagory, string Portion, string  Ingredienser , string Hur)
         {
-            using (StreamWriter writer = new StreamWriter(File, true))
+            using (StreamWriter writer = new StreamWriter(Filepath, true))
             {
                 writer.WriteLine($"{Titel}#{Katagory}#{Portion}#{Ingredienser}#{Hur}");
             }
         }
         public List<test> showData()
         {
+            if (File.Exists(Filepath))
+            { 
+                File.Create(Filepath).Close();
+            }
+
             List<test> receptbok = new List<test>();
-            using (StreamReader reader = new StreamReader(File))
+            using (StreamReader reader = new StreamReader(Filepath))
             {
                 string fileContent = reader.ReadToEnd();
                 string[] records = fileContent.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
@@ -66,7 +71,7 @@ namespace recp_18_ok
                 receptbook.RemoveAll(recept => recept.Titel == receptToDelete);
 
                 // Update the text file with the new list
-                using (StreamWriter writer = new StreamWriter(File))
+                using (StreamWriter writer = new StreamWriter(Filepath))
                 {
                     foreach (var recept in receptbook)
                     {
