@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kommentarer och textfiler",
 		Ver 1 kommentarer.txt = Ver 1 kommentarer.txt
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "recp 18 ok", "recp 18 ok\recp 18 ok.csproj", "{3A83C2CB-8BF4-4ED6-BD62-793210FF14E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{CF24D506-60E8-49E5-802C-5E44E951B4E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF24D506-60E8-49E5-802C-5E44E951B4E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF24D506-60E8-49E5-802C-5E44E951B4E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A83C2CB-8BF4-4ED6-BD62-793210FF14E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A83C2CB-8BF4-4ED6-BD62-793210FF14E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A83C2CB-8BF4-4ED6-BD62-793210FF14E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A83C2CB-8BF4-4ED6-BD62-793210FF14E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
