@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "recp 18 ok", "recp 18 ok\re
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tillfälliga projekt (Najah)", "Tillfälliga projekt (Najah)", "{E0A8C8E4-EDD4-4A3C-9CAC-D9F293A926D2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inlämningsuppgift 4 (Grupparbete) ver 2", "Inlämningsuppgift 4 (Grupparbete) ver 2\Inlämningsuppgift 4 (Grupparbete) ver 2.csproj", "{00A58047-A1CA-4333-81AB-5F4DDBDAE855}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{3A83C2CB-8BF4-4ED6-BD62-793210FF14E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A83C2CB-8BF4-4ED6-BD62-793210FF14E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A83C2CB-8BF4-4ED6-BD62-793210FF14E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00A58047-A1CA-4333-81AB-5F4DDBDAE855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A58047-A1CA-4333-81AB-5F4DDBDAE855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00A58047-A1CA-4333-81AB-5F4DDBDAE855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00A58047-A1CA-4333-81AB-5F4DDBDAE855}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
