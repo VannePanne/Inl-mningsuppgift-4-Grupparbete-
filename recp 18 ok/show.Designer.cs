@@ -58,45 +58,40 @@
             lbltitel.AutoSize = true;
             lbltitel.Location = new Point(154, 156);
             lbltitel.Name = "lbltitel";
-            lbltitel.Size = new Size(50, 20);
+            lbltitel.Size = new Size(0, 20);
             lbltitel.TabIndex = 1;
-            lbltitel.Text = "label1";
             // 
             // lblkat
             // 
             lblkat.AutoSize = true;
             lblkat.Location = new Point(154, 196);
             lblkat.Name = "lblkat";
-            lblkat.Size = new Size(50, 20);
+            lblkat.Size = new Size(0, 20);
             lblkat.TabIndex = 2;
-            lblkat.Text = "label2";
             // 
             // lblportion
             // 
             lblportion.AutoSize = true;
             lblportion.Location = new Point(154, 232);
             lblportion.Name = "lblportion";
-            lblportion.Size = new Size(50, 20);
+            lblportion.Size = new Size(0, 20);
             lblportion.TabIndex = 3;
-            lblportion.Text = "label3";
             // 
             // lbling
             // 
             lbling.AutoSize = true;
             lbling.Location = new Point(113, 306);
             lbling.Name = "lbling";
-            lbling.Size = new Size(50, 20);
+            lbling.Size = new Size(0, 20);
             lbling.TabIndex = 5;
-            lbling.Text = "label5";
             // 
             // lblhur
             // 
             lblhur.AutoSize = true;
             lblhur.Location = new Point(389, 306);
             lblhur.Name = "lblhur";
-            lblhur.Size = new Size(50, 20);
+            lblhur.Size = new Size(0, 20);
             lblhur.TabIndex = 6;
-            lblhur.Text = "label6";
             // 
             // label1
             // 
