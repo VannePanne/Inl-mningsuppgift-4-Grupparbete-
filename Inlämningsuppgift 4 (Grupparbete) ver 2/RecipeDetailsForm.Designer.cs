@@ -31,6 +31,7 @@
             titleLabel = new Label();
             typeLabel = new Label();
             descriptionLabel = new Label();
+            btnEdit = new Button();
             SuspendLayout();
             // 
             // titleLabel
@@ -62,11 +63,23 @@
             descriptionLabel.TabIndex = 2;
             descriptionLabel.Text = "Description";
             // 
+            // btnEdit
+            // 
+            btnEdit.Location = new Point(44, 33);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(75, 23);
+            btnEdit.TabIndex = 3;
+            btnEdit.Text = "Edit";
+            btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Visible = false;
+            btnEdit.Click += btnEdit_Click;
+            // 
             // RecipeDetailsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnEdit);
             Controls.Add(descriptionLabel);
             Controls.Add(typeLabel);
             Controls.Add(titleLabel);
@@ -81,5 +94,6 @@
         private Label titleLabel;
         private Label typeLabel;
         private Label descriptionLabel;
+        private Button btnEdit;
     }
 }
