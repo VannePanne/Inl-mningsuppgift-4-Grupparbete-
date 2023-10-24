@@ -28,27 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             txtSearch = new TextBox();
             btnSearch = new Button();
             recipeDataGridView = new DataGridView();
             Title = new DataGridViewTextBoxColumn();
-            txtName = new TextBox();
-            txtDescription = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
-            comboBox1 = new ComboBox();
+            btnSignIn = new Button();
             ((System.ComponentModel.ISupportInitialize)recipeDataGridView).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(140, 100);
-            label1.Name = "label1";
-            label1.Size = new Size(49, 15);
-            label1.TabIndex = 1;
-            label1.Text = "Mat Typ";
             // 
             // txtSearch
             // 
@@ -87,61 +73,25 @@
             Title.Name = "Title";
             Title.ReadOnly = true;
             // 
-            // txtName
+            // btnSignIn
             // 
-            txtName.Location = new Point(895, 59);
-            txtName.Name = "txtName";
-            txtName.Size = new Size(100, 23);
-            txtName.TabIndex = 5;
-            // 
-            // txtDescription
-            // 
-            txtDescription.Location = new Point(895, 100);
-            txtDescription.Name = "txtDescription";
-            txtDescription.Size = new Size(100, 23);
-            txtDescription.TabIndex = 5;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(828, 108);
-            label2.Name = "label2";
-            label2.Size = new Size(68, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Beskrivning";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(828, 67);
-            label3.Name = "label3";
-            label3.Size = new Size(29, 15);
-            label3.TabIndex = 1;
-            label3.Text = "Titel";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Food", "Meat", "Fish", "Salad", "Soup", "Dessert" });
-            comboBox1.Location = new Point(195, 97);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 6;
+            btnSignIn.Location = new Point(895, 27);
+            btnSignIn.Name = "btnSignIn";
+            btnSignIn.Size = new Size(75, 23);
+            btnSignIn.TabIndex = 7;
+            btnSignIn.Text = "Sign In";
+            btnSignIn.UseVisualStyleBackColor = true;
+            btnSignIn.Click += btnSignIn_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1049, 445);
-            Controls.Add(comboBox1);
-            Controls.Add(txtDescription);
-            Controls.Add(txtName);
+            Controls.Add(btnSignIn);
             Controls.Add(recipeDataGridView);
             Controls.Add(btnSearch);
             Controls.Add(txtSearch);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
             Margin = new Padding(2, 1, 2, 1);
             Name = "Form1";
             Text = "Form1";
@@ -151,15 +101,10 @@
         }
 
         #endregion
-        private Label label1;
         private TextBox txtSearch;
         private Button btnSearch;
         private DataGridView recipeDataGridView;
-        private TextBox txtName;
-        private TextBox txtDescription;
-        private Label label2;
-        private Label label3;
-        private ComboBox comboBox1;
         private DataGridViewTextBoxColumn Title;
+        private Button btnSignIn;
     }
 }
