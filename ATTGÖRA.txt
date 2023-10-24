@@ -10,7 +10,7 @@ Klasser
 
 
 Listor:
--Recept?
+-Recept?//CORNELIA
 
 Metoder: (ska finnas i klassen i recept)
 -write(info till TXT)[1] //CORNELIA

@@ -6,5 +6,10 @@ namespace RECEPT4DUMMIES
         {
             InitializeComponent();
         }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
