@@ -19,12 +19,19 @@ namespace RECEPT4DUMMIES
         }
 
         // Dubbelklicka på Textrutorna för att kunna ändra dem om du är inloggad som en admin. Om inte så händer inget.
-        private void textbox_DoubleClick(object sender, EventArgs e)
-        {
-            textBox.ReadOnly = !textBox.ReadOnly;
-        }
+        //private void textbox_DoubleClick(object sender, EventArgs e)
+        //{
+        //    textBox.ReadOnly = !textBox.ReadOnly;
+        //}
 
 
         // Om du klickar på "Enter" på nuvarande textruta så ändras den till "Read Only" och recept objektet updateras i "recipes" listan som finnns i "MainForm" klassen.
+        //private void textbox_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.Enter)
+        //    {
+        //        textBox.ReadOnly = true;
+        //    }
+        //}
     }
 }
