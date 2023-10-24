@@ -16,6 +16,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kommentarer och textfiler", "Kommentarer och textfiler", "{77C92A40-1083-42F4-9235-0AEE3F35DF17}"
 	ProjectSection(SolutionItems) = preProject
 		admins.txt = admins.txt
+		ATTGÖRA.txt = ATTGÖRA.txt
 		recipes.txt = recipes.txt
 		Ver 1 kommentarer.txt = Ver 1 kommentarer.txt
 	EndProjectSection

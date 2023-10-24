@@ -1,0 +1,24 @@
+Här nedanför finns delar av arbetet som fortfarande behöver göras. För att alla ska veta vem som jobbar med vad kan ni 
+skriva //MITTNAMN efter varje rad ni vill  ansvara över så vi andra vet på ett ungefär vem som gör vad.
+Det som är numrerat är kopplad till samma nummer i en annan del.
+
+Klasser
+-Recept(egenskaper= titel, kategori, beskrivning)(field = receptlista) //KEVIN OCH NAJAH :D
+-FormMain(admin/user) ##PRIORITERA INNAN ANDRA KLASSER##
+-FormLogIn(separat form) //Kamal
+
+
+Listor:
+-Recept?
+
+Metoder: (ska finnas i klassen i recept)
+-write(info till TXT)[1] 
+-load(läsa från TXT)[2] (spara allt till en lista i TXT)
+-update(redigera)[3]
+-delete(Radera)[4]
+
+Admin Form:
+design[1] (lägg till knapp för att lägga till txt i filen)
+load[2] (Körs, lägg till knapp som läser från textfil till datagrid/listview etc)
+redigera[3] (lägg till knapp som kommer uppdatera textenn till textfilen)
+radera[4] (RADERA :D knapp) delete that hoe
