@@ -33,12 +33,16 @@
             button3 = new Button();
             label1 = new Label();
             txtBoxSearch = new TextBox();
+            textBoxtitel = new TextBox();
+            textBoxcategori = new TextBox();
+            textBoxingredients = new TextBox();
+            textBoxdescription = new TextBox();
             SuspendLayout();
             // 
             // button1
             // 
             button1.BackColor = Color.Gold;
-            button1.Location = new Point(220, 355);
+            button1.Location = new Point(243, 355);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
@@ -79,10 +83,44 @@
             // 
             // txtBoxSearch
             // 
-            txtBoxSearch.Location = new Point(244, 95);
+            txtBoxSearch.Location = new Point(243, 87);
             txtBoxSearch.Name = "txtBoxSearch";
             txtBoxSearch.Size = new Size(448, 23);
             txtBoxSearch.TabIndex = 4;
+            // 
+            // textBoxtitel
+            // 
+            textBoxtitel.Location = new Point(254, 132);
+            textBoxtitel.Name = "textBoxtitel";
+            textBoxtitel.Size = new Size(100, 23);
+            textBoxtitel.TabIndex = 5;
+            textBoxtitel.Text = "Titel";
+            // 
+            // textBoxcategori
+            // 
+            textBoxcategori.Location = new Point(413, 132);
+            textBoxcategori.Name = "textBoxcategori";
+            textBoxcategori.Size = new Size(100, 23);
+            textBoxcategori.TabIndex = 6;
+            textBoxcategori.Text = "Categori";
+            // 
+            // textBoxingredients
+            // 
+            textBoxingredients.Location = new Point(578, 132);
+            textBoxingredients.Multiline = true;
+            textBoxingredients.Name = "textBoxingredients";
+            textBoxingredients.Size = new Size(100, 204);
+            textBoxingredients.TabIndex = 7;
+            textBoxingredients.Text = "Ingredients";
+            // 
+            // textBoxdescription
+            // 
+            textBoxdescription.Location = new Point(254, 173);
+            textBoxdescription.Multiline = true;
+            textBoxdescription.Name = "textBoxdescription";
+            textBoxdescription.Size = new Size(272, 163);
+            textBoxdescription.TabIndex = 8;
+            textBoxdescription.Text = "Description";
             // 
             // MainForm
             // 
@@ -90,6 +128,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SlateGray;
             ClientSize = new Size(945, 430);
+            Controls.Add(textBoxdescription);
+            Controls.Add(textBoxingredients);
+            Controls.Add(textBoxcategori);
+            Controls.Add(textBoxtitel);
             Controls.Add(txtBoxSearch);
             Controls.Add(label1);
             Controls.Add(button3);
@@ -109,5 +151,9 @@
         private Button button3;
         private Label label1;
         private TextBox txtBoxSearch;
+        private TextBox textBoxtitel;
+        private TextBox textBoxcategori;
+        private TextBox textBoxingredients;
+        private TextBox textBoxdescription;
     }
 }
