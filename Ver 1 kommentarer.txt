@@ -1,0 +1,26 @@
+Vad har vi gjort i denna version:
+
+1. Skapat en WinForms för användaren där man kan söka efter recept. När man markerar en rad så öppnas en ny WinForms där man kan se Titel, Beskrivning och mat typ.
+
+2. Recepten läses in från en textfil in i en lista. Dessa recept är objekt med fields "Titel", "Beskrivning" och "Typ".
+
+
+Vad som behöver förbättras:
+
+1. Vi har ingen Admin eller metoder i programmet än som kan ändra recept, ta bort recept och lägga till nya typer. I "Form1" Design kan vi ha en Logga in ruta och om  man skriver rätt
+kod så har man även tillgång till Admin verktygen. Admin har tillgång till "Form1" som en normal användare, men när den klickar på ettt sökresultat så öppnas en unik Form som 
+bara Admins har tillgång till där man kan använda sig av "updatera" och "ta bort" metoderna.
+
+2. I klassen "RecipeDetailsForm" så visas beskrivningen som en label men det skulle se bättre ut med en RichTextbox. Najah vet hur man fixar detta.
+
+3. I btnSearch kan jag lägga till kod för att också kunna söka på typen. Eller Kunna söka på typen och titeln samtidigt.
+
+3. Jag tycker att jag har för mycket kommentarer i "private void recipeDataGridView_SelectionChanged". Kan någon skriva bättre kommentarer eller ta bort några på den metoden?
+
+
+
+
+
+
+
+4. När jag laddar description från text dokummentet så kanske jag kan använda mig av en "break;" för varje rad (får testa senare).
