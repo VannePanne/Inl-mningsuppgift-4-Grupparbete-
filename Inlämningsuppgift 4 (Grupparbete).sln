@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inlämningsuppgift 4 (Grupp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kommentarer och textfiler", "Kommentarer och textfiler", "{77C92A40-1083-42F4-9235-0AEE3F35DF17}"
 	ProjectSection(SolutionItems) = preProject
+		admins.txt = admins.txt
+		ATTGÖRA.txt = ATTGÖRA.txt
 		recipes.txt = recipes.txt
 		Ver 1 kommentarer.txt = Ver 1 kommentarer.txt
 	EndProjectSection
@@ -24,6 +26,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tillfälliga projekt (Najah)", "Tillfälliga projekt (Najah)", "{E0A8C8E4-EDD4-4A3C-9CAC-D9F293A926D2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inlämningsuppgift 4 (Grupparbete) ver 2", "Inlämningsuppgift 4 (Grupparbete) ver 2\Inlämningsuppgift 4 (Grupparbete) ver 2.csproj", "{00A58047-A1CA-4333-81AB-5F4DDBDAE855}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RECEPT4DUMMIES", "RECEPT4DUMMIES\RECEPT4DUMMIES.csproj", "{C1D225C1-DA67-49D3-819E-AC2368D7632E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,10 @@ Global
 		{00A58047-A1CA-4333-81AB-5F4DDBDAE855}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00A58047-A1CA-4333-81AB-5F4DDBDAE855}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00A58047-A1CA-4333-81AB-5F4DDBDAE855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D225C1-DA67-49D3-819E-AC2368D7632E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D225C1-DA67-49D3-819E-AC2368D7632E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D225C1-DA67-49D3-819E-AC2368D7632E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D225C1-DA67-49D3-819E-AC2368D7632E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +73,7 @@ Global
 		{6393E125-5A7F-4474-86F7-33AC08552CC8} = {20D86F35-BC67-4E1A-AC5B-A88A8CECE2DD}
 		{CF24D506-60E8-49E5-802C-5E44E951B4E9} = {20D86F35-BC67-4E1A-AC5B-A88A8CECE2DD}
 		{3A83C2CB-8BF4-4ED6-BD62-793210FF14E2} = {E0A8C8E4-EDD4-4A3C-9CAC-D9F293A926D2}
+		{00A58047-A1CA-4333-81AB-5F4DDBDAE855} = {20D86F35-BC67-4E1A-AC5B-A88A8CECE2DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6155B67E-C388-4904-B9BE-F8E550A43CF8}

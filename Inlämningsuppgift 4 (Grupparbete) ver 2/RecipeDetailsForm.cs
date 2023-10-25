@@ -19,5 +19,15 @@ namespace Inlämningsuppgift_4__Grupparbete_
             descriptionLabel.Text = selectedRecipe.Description;
             typeLabel.Text = selectedRecipe.Type;
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            
+            
+            
+            
+            //EditRecipeDetailsForm detailsForm = new EditRecipeDetailsForm(titleLabel, descriptionLabel, typeLabel);
+            //detailsForm.ShowDialog();
+        }
     }
 }

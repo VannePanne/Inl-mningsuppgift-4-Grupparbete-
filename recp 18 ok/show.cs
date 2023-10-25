@@ -16,7 +16,11 @@ namespace recp_18_ok
         {
             InitializeComponent();
         }
-
+        
+        public void Banan()
+        {
+            //hej
+        }
         public void SetData(string title, string category, string portion, string ingredients, string howTo)
         {
             lbltitel.Text = title;
