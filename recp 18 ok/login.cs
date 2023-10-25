@@ -36,6 +36,7 @@ namespace recp_18_ok
             {
                 MessageBox.Show("Du är inloggad");
                 // instanse of adminform
+                this.Close();
                 admin admin = new admin();
                 admin.ShowDialog();
             }

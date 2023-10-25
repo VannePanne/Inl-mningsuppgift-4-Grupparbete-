@@ -91,7 +91,7 @@ namespace Inlämningsuppgift_4__Grupparbete_
                 }
             }
         }
-        
+
         // Open a new Form that displays the Title and the description if I select a row.
         private void recipeDataGridView_SelectionChanged(object sender, EventArgs e)
         {
@@ -125,6 +125,11 @@ namespace Inlämningsuppgift_4__Grupparbete_
                 }
 
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
