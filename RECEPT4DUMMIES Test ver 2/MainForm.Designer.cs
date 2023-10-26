@@ -39,9 +39,10 @@
             // 
             // SignInButton
             // 
-            SignInButton.Location = new Point(785, 59);
+            SignInButton.Location = new Point(1121, 98);
+            SignInButton.Margin = new Padding(4, 5, 4, 5);
             SignInButton.Name = "SignInButton";
-            SignInButton.Size = new Size(78, 34);
+            SignInButton.Size = new Size(111, 57);
             SignInButton.TabIndex = 0;
             SignInButton.Text = "Sign in";
             SignInButton.UseVisualStyleBackColor = true;
@@ -53,32 +54,38 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Title });
-            dataGridView1.Location = new Point(209, 146);
+            dataGridView1.Location = new Point(299, 243);
+            dataGridView1.Margin = new Padding(4, 5, 4, 5);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 62;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(471, 230);
+            dataGridView1.Size = new Size(673, 383);
             dataGridView1.TabIndex = 1;
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
             // Title
             // 
             Title.HeaderText = "Title";
+            Title.MinimumWidth = 8;
             Title.Name = "Title";
             Title.ReadOnly = true;
+            Title.Width = 150;
             // 
             // SearchTextbox
             // 
-            SearchTextbox.Location = new Point(355, 85);
+            SearchTextbox.Location = new Point(507, 142);
+            SearchTextbox.Margin = new Padding(4, 5, 4, 5);
             SearchTextbox.Name = "SearchTextbox";
-            SearchTextbox.Size = new Size(185, 23);
+            SearchTextbox.Size = new Size(263, 31);
             SearchTextbox.TabIndex = 2;
             // 
             // SearchButton
             // 
-            SearchButton.Location = new Point(579, 84);
+            SearchButton.Location = new Point(827, 140);
+            SearchButton.Margin = new Padding(4, 5, 4, 5);
             SearchButton.Name = "SearchButton";
-            SearchButton.Size = new Size(75, 23);
+            SearchButton.Size = new Size(107, 38);
             SearchButton.TabIndex = 3;
             SearchButton.Text = "Search";
             SearchButton.UseVisualStyleBackColor = true;
@@ -86,9 +93,10 @@
             // 
             // signOutButton
             // 
-            signOutButton.Location = new Point(785, 118);
+            signOutButton.Location = new Point(1121, 197);
+            signOutButton.Margin = new Padding(4, 5, 4, 5);
             signOutButton.Name = "signOutButton";
-            signOutButton.Size = new Size(78, 33);
+            signOutButton.Size = new Size(111, 55);
             signOutButton.TabIndex = 4;
             signOutButton.Text = "Sign out";
             signOutButton.UseVisualStyleBackColor = true;
@@ -97,15 +105,14 @@
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(935, 473);
+            ClientSize = new Size(1336, 788);
             Controls.Add(signOutButton);
             Controls.Add(SearchButton);
             Controls.Add(SearchTextbox);
             Controls.Add(dataGridView1);
             Controls.Add(SignInButton);
-            Margin = new Padding(2);
             Name = "MainForm";
             Text = "MainForm";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
