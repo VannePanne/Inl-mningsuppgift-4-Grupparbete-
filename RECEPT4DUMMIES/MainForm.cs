@@ -11,6 +11,7 @@ namespace RECEPT4DUMMIES
         private Button SignInButton;
         private Button signOutButton;
         private Button button1;
+        private Button Removebutton;
         public bool isAdmin;
 
 
@@ -70,6 +71,7 @@ namespace RECEPT4DUMMIES
             SignInButton = new Button();
             signOutButton = new Button();
             button1 = new Button();
+            Removebutton = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -78,7 +80,7 @@ namespace RECEPT4DUMMIES
             SearchTextbox.Location = new Point(78, 78);
             SearchTextbox.Margin = new Padding(4, 5, 4, 5);
             SearchTextbox.Name = "SearchTextbox";
-            SearchTextbox.Size = new Size(263, 31);
+            SearchTextbox.Size = new Size(263, 39);
             SearchTextbox.TabIndex = 3;
             // 
             // dataGridView1
@@ -145,9 +147,19 @@ namespace RECEPT4DUMMIES
             button1.Text = "Nytt Recept";
             button1.UseVisualStyleBackColor = true;
             // 
+            // Removebutton
+            // 
+            Removebutton.Location = new Point(772, 307);
+            Removebutton.Name = "Removebutton";
+            Removebutton.Size = new Size(150, 46);
+            Removebutton.TabIndex = 9;
+            Removebutton.Text = "Ta Bort";
+            Removebutton.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             ClientSize = new Size(948, 629);
+            Controls.Add(Removebutton);
             Controls.Add(button1);
             Controls.Add(signOutButton);
             Controls.Add(SignInButton);
@@ -161,12 +173,26 @@ namespace RECEPT4DUMMIES
         }
 
 
-        // Ta bort markerad recipe
+        // Ta bort markerad recipe från datagrid samt textfil
         private void DeleteSelectedRecipeButton_Click()
         {
-            // Ta bort receptet från listan
+            var index = dataGridView1.SelectedCells[0];
+            if (index != null)
+                recipes.RemoveAt(index.RowIndex);
+            dataGridView1.Rows.RemoveAt(index.RowIndex);
+            StreamWriter sw = new StreamWriter(RecipeFilePath);
+            foreach (var s in recipes)
+            {
+                sw.WriteLine(s.Title + "," + s.Description + "," + s.Type);
+
+            }
+            sw.Close();
 
         }
 
+        private void Removebutton_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
