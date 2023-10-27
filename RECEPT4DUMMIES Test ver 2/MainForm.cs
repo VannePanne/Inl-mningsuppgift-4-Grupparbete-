@@ -1,4 +1,11 @@
+using System;
+using System.Data;
+using System.Diagnostics;
+using System.IO;
+using System.Reflection;
+using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace RECEPT4DUMMIES
 {
@@ -145,6 +152,8 @@ namespace RECEPT4DUMMIES
             {
                 SignInButton.Visible = false; // kan alternativt skriva "!isAdminSignedIn" istället för "false"
                 signOutButton.Visible = true;
+                Deletetest.Visible = false;
+                Deletetest.Visible = true;
             }
         }
 
@@ -158,11 +167,7 @@ namespace RECEPT4DUMMIES
 
 
         // Ta bort markerad recipe
-        private void DeleteSelectedRecipeButton_Click()
-        {
-            // Ta bort receptet från listan
 
-        }
 
         // Uppdatera recept textfilen
         private void UppdateTextFile()
@@ -178,6 +183,23 @@ namespace RECEPT4DUMMIES
             LoadRecipes();
         }
 
+       //Ta bort recept från datagrid samt textfil
+        private void Deletetest_MouseClick(object sender, MouseEventArgs e)
+        {
+
+            var index = dataGridView1.SelectedCells[0];
+            if (index != null)
+                recipes.RemoveAt(index.RowIndex);
+            dataGridView1.Rows.RemoveAt(index.RowIndex);
+            StreamWriter sw = new StreamWriter(RecipeFilePath);
+            foreach (var s in recipes)
+            {
+                sw.WriteLine(s.Title + "," + s.Description + "," + s.Type);
+
+            }
+            sw.Close();
+
+        }
 
     }
 }

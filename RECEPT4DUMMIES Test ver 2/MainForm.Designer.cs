@@ -34,15 +34,16 @@
             SearchTextbox = new TextBox();
             SearchButton = new Button();
             signOutButton = new Button();
+            Deletetest = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // SignInButton
             // 
-            SignInButton.Location = new Point(1121, 98);
-            SignInButton.Margin = new Padding(4, 5, 4, 5);
+            SignInButton.Location = new Point(1457, 125);
+            SignInButton.Margin = new Padding(5, 6, 5, 6);
             SignInButton.Name = "SignInButton";
-            SignInButton.Size = new Size(111, 57);
+            SignInButton.Size = new Size(144, 73);
             SignInButton.TabIndex = 0;
             SignInButton.Text = "Sign in";
             SignInButton.UseVisualStyleBackColor = true;
@@ -54,13 +55,13 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Title });
-            dataGridView1.Location = new Point(299, 243);
-            dataGridView1.Margin = new Padding(4, 5, 4, 5);
+            dataGridView1.Location = new Point(389, 311);
+            dataGridView1.Margin = new Padding(5, 6, 5, 6);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(673, 383);
+            dataGridView1.Size = new Size(875, 490);
             dataGridView1.TabIndex = 1;
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
@@ -74,18 +75,18 @@
             // 
             // SearchTextbox
             // 
-            SearchTextbox.Location = new Point(507, 142);
-            SearchTextbox.Margin = new Padding(4, 5, 4, 5);
+            SearchTextbox.Location = new Point(659, 182);
+            SearchTextbox.Margin = new Padding(5, 6, 5, 6);
             SearchTextbox.Name = "SearchTextbox";
-            SearchTextbox.Size = new Size(263, 31);
+            SearchTextbox.Size = new Size(341, 39);
             SearchTextbox.TabIndex = 2;
             // 
             // SearchButton
             // 
-            SearchButton.Location = new Point(827, 140);
-            SearchButton.Margin = new Padding(4, 5, 4, 5);
+            SearchButton.Location = new Point(1075, 179);
+            SearchButton.Margin = new Padding(5, 6, 5, 6);
             SearchButton.Name = "SearchButton";
-            SearchButton.Size = new Size(107, 38);
+            SearchButton.Size = new Size(139, 49);
             SearchButton.TabIndex = 3;
             SearchButton.Text = "Search";
             SearchButton.UseVisualStyleBackColor = true;
@@ -93,26 +94,39 @@
             // 
             // signOutButton
             // 
-            signOutButton.Location = new Point(1121, 197);
-            signOutButton.Margin = new Padding(4, 5, 4, 5);
+            signOutButton.Location = new Point(1457, 252);
+            signOutButton.Margin = new Padding(5, 6, 5, 6);
             signOutButton.Name = "signOutButton";
-            signOutButton.Size = new Size(111, 55);
+            signOutButton.Size = new Size(144, 70);
             signOutButton.TabIndex = 4;
             signOutButton.Text = "Sign out";
             signOutButton.UseVisualStyleBackColor = true;
             signOutButton.Visible = false;
             signOutButton.Click += signOutButton_Click;
             // 
+            // Deletetest
+            // 
+            Deletetest.Location = new Point(1457, 353);
+            Deletetest.Name = "Deletetest";
+            Deletetest.Size = new Size(150, 59);
+            Deletetest.TabIndex = 5;
+            Deletetest.Text = "DeleteTest";
+            Deletetest.UseVisualStyleBackColor = true;
+            Deletetest.Visible = false;
+            Deletetest.MouseClick += Deletetest_MouseClick;
+            // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1336, 788);
+            ClientSize = new Size(1737, 1009);
+            Controls.Add(Deletetest);
             Controls.Add(signOutButton);
             Controls.Add(SearchButton);
             Controls.Add(SearchTextbox);
             Controls.Add(dataGridView1);
             Controls.Add(SignInButton);
+            Margin = new Padding(4);
             Name = "MainForm";
             Text = "MainForm";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -128,5 +142,6 @@
         private TextBox SearchTextbox;
         private Button SearchButton;
         private Button signOutButton;
+        private Button Deletetest;
     }
 }
