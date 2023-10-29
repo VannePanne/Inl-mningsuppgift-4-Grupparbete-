@@ -187,7 +187,7 @@ namespace RECEPT4DUMMIES
 
         private void AddRecipeButton_Click(object sender, EventArgs e)
         {
-            RecipeDetailsForm detailsForm = new RecipeDetailsForm(null, isAdminSignedIn);
+            RecipeDetailsForm detailsForm = new RecipeDetailsForm(isAdminSignedIn);
             detailsForm.ShowDialog();
 
             if (detailsForm.AddRecipe)
@@ -197,7 +197,7 @@ namespace RECEPT4DUMMIES
                 {
                     recipes.Add(newRecipe);
                     dataGridView1.Rows.Add(newRecipe.Title);
-                    UppdateTextFile(); // Update the text file with the new recipe
+                    UppdateTextFile(); // Uppdatera textfilen med det nya receptet
                 }
             }
         }
